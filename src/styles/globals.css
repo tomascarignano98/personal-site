@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Typography */
+@layer base {
+  * {
+    @apply outline-primary;
+  }
+
+  html {
+    font-size: 100%;
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-white
+    text-sm leading-normal text-gray-700 sm:text-lg;
+    font-family: 'Open Sans', Helvetica, sans-serif, Arial;
+  }
+
+  h1 {
+    @apply mb-8 text-3xl;
+  }
+
+  h2 {
+    @apply mb-4 text-2xl;
+  }
+
+  h1,
+  h2 {
+    @apply font-bold leading-none text-header;
+  }
+
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input::-webkit-file-upload-button {
+    cursor: pointer;
+  }
+
+  input {
+    @apply accent-primary;
+  }
+
+  select > option {
+    @apply bg-white;
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+}
