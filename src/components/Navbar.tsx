@@ -4,13 +4,13 @@ import NavLink from '@/components/NavLink';
 
 export default function Navbar() {
   return (
-    <header className="border-b print:hidden">
+    <header className="fixed top-0 left-0 right-0 z-10 border-b bg-white/[0.96] backdrop-blur-sm print:hidden">
       <div className="mx-auto max-w-screen-lg px-2">
-        <nav className="flex items-center justify-between py-2 [&_a]:outline-offset-4">
+        <nav className="flex items-center justify-between py-2 sm:text-base">
           <HomeLink />
 
-          <ul className="flex items-center justify-between gap-x-3 sm:gap-x-8">
-            <NavLink href="/#about-me">About</NavLink>
+          <ul className="flex items-center justify-between gap-x-3 font-medium sm:gap-x-8">
+            <NavLink href="/#about">About</NavLink>
             <NavLink href="/#projects">Projects</NavLink>
             <NavLink href="/#contact">Contact</NavLink>
             <ResumeLink />
@@ -32,12 +32,7 @@ function HomeLink() {
 function ResumeLink() {
   return (
     <li>
-      <a
-        href="/resume.pdf"
-        target="_blank"
-        onMouseDown={(e) => e.preventDefault()}
-        className="font-medium hover:text-primary"
-      >
+      <a href="/resume.pdf" target="_blank" className="hover:text-primary">
         Resume
       </a>
     </li>

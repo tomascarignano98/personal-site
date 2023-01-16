@@ -17,11 +17,7 @@ export default function NavLink({ href, children }: NavLinkProps) {
     <li>
       <Link
         href={href}
-        className={clsxm(
-          'font-medium hover:text-primary',
-          pageIsActive && 'text-primary'
-        )}
-        onMouseDown={(e) => e.preventDefault()}
+        className={clsxm('hover:text-primary', pageIsActive && 'text-primary')}
       >
         {children}
       </Link>
