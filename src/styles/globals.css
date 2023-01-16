@@ -4,20 +4,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Typography */
 @layer base {
   * {
-    @apply outline-primary;
+    @apply outline-offset-4 outline-primary;
   }
 
   html {
     font-size: 100%;
-    @apply scroll-smooth;
+    /* @apply scroll-smooth; */
+    scroll-behavior: smooth !important; /* only solution when using next v13+ */
   }
 
   body {
-    @apply bg-white
-    text-sm leading-normal text-gray-700 sm:text-lg;
+    @apply bg-white text-sm leading-normal text-gray-700 sm:text-lg;
     font-family: 'Open Sans', Helvetica, sans-serif, Arial;
   }
 
@@ -26,31 +25,22 @@
   }
 
   h2 {
-    @apply mb-4 text-2xl;
+    @apply mb-4 text-2xl sm:text-3xl;
+  }
+
+  h3 {
+    @apply mb-3 text-xl;
   }
 
   h1,
-  h2 {
-    @apply font-bold leading-none text-header;
+  h2,
+  h3 {
+    @apply font-bold leading-none text-header sm:leading-none;
   }
 
-  input[type='number']::-webkit-inner-spin-button,
-  input[type='number']::-webkit-outer-spin-button {
-    appearance: none;
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  input::-webkit-file-upload-button {
-    cursor: pointer;
-  }
-
-  input {
-    @apply accent-primary;
-  }
-
-  select > option {
-    @apply bg-white;
+  main a,
+  footer a {
+    @apply text-primary hover:underline;
   }
 }
 
