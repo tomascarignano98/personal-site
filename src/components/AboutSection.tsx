@@ -34,8 +34,9 @@ export default function AboutSection() {
             engineer. <Link href="/#projects">Check out some of my work.</Link>
           </p>
           <p>
-            I'm currently looking for a new role where I can learn and grow
-            further, so feel free to <Link href="/#contact">contact me.</Link>
+            I'm currently looking for a new role, ideally full of challenges and
+            learning opportunities, so feel free to{' '}
+            <Link href="/#contact">contact me.</Link>
           </p>
         </div>
 
@@ -43,17 +44,13 @@ export default function AboutSection() {
           <div className="flex flex-col items-center rounded-lg border py-4 shadow-md md:px-16">
             <h3>Main Skills</h3>
             <ul className="columns-2 gap-x-8 sm:text-base">
-              <div>
-                <ListItem text="JavaScript" />
-                <ListItem text="TypeScript" />
-                <ListItem text="Node.js" />
-                <ListItem text="HTML/CSS" />
-              </div>
-              <div>
-                <ListItem text="React" />
-                <ListItem text="Next.js" />
-                <ListItem text="Firebase" />
-              </div>
+              <ListItem text="JavaScript" />
+              <ListItem text="TypeScript" />
+              <ListItem text="Node.js" />
+              <ListItem text="HTML/CSS" />
+              <ListItem text="React" />
+              <ListItem text="Next.js" />
+              <ListItem text="Firebase" />
             </ul>
           </div>
         </div>
