@@ -20,6 +20,14 @@
     font-family: 'Open Sans', Helvetica, sans-serif, Arial;
   }
 
+  body::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    @apply rounded-sm bg-header;
+  }
+
   h1 {
     @apply mb-8 text-3xl;
   }
@@ -45,6 +53,9 @@
 }
 
 @layer components {
+  .todo {
+    @apply text-orange-600;
+  }
 }
 
 @layer utilities {

@@ -42,7 +42,7 @@ function ProjectCard({ title, description, src }: ProjectProps) {
           className="mb-3 h-44 w-full object-cover object-top"
           alt={title + ' project'}
         />
-        <h3 className="mb-1 text-lg">{title}</h3>
+        <h3 className="mb-2">{title}</h3>
       </header>
       <main className="mb-3 px-3">
         <p className="sm:text-base">{description}</p>
