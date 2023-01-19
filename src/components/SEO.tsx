@@ -7,8 +7,8 @@ interface ComponentProps {
 export default function SEO({ title }: ComponentProps) {
   const description =
     'Tomas Carignano is a Software Developer based in Denmark.';
-  const url = 'https://www.tomascarignano.com/vercel.svg';
-  const logoUrl = url + 'vercel.svg';
+  const url = 'https://www.tomascarignano.com/';
+  const imgUrl = url + 'profile.jpg';
 
   return (
     <Head>
@@ -19,11 +19,11 @@ export default function SEO({ title }: ComponentProps) {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
-      <meta property="og:image" content={logoUrl} />
+      <meta property="og:image" content={imgUrl} />
       {/* Twitter */}
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={logoUrl} />
+      <meta name="twitter:image" content={imgUrl} />
     </Head>
   );
 }
