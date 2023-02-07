@@ -42,11 +42,10 @@ export default function AboutSection() {
 
         <div>
           <div className="flex flex-col items-center rounded-lg border py-4 shadow-md md:px-16">
-            <h3>Main Skills</h3>
+            <h3>Main Tech</h3>
             <ul className="columns-2 gap-x-8 sm:text-base">
               <ListItem text="JavaScript" />
               <ListItem text="TypeScript" />
-              <ListItem text="Node.js" />
               <ListItem text="HTML/CSS" />
               <ListItem text="React" />
               <ListItem text="Next.js" />
