@@ -11,19 +11,19 @@ export default function ProjectsSection() {
           title="Qspeed"
           description="A multilayered product to time mountain bike races."
           href="/projects/qspeed"
-          src="qspeed.png"
+          imgSrc="qspeed/thumbnail.png"
         />
         <ProjectCard
           title="Doroteas"
           description="A full-stack web app to help a group of schools manage their students financially."
           href="/projects/doroteas"
-          src="doroteas.png"
+          imgSrc="doroteas/thumbnail.png"
         />
         <ProjectCard
           title="Passport Bot"
           description="A browser automation script to book an appointment at the Spanish consulate."
           href="/projects/passport-bot"
-          src="passport-bot.jpg"
+          imgSrc="passport-bot/thumbnail.jpg"
         />
       </div>
     </section>
@@ -34,14 +34,14 @@ interface ProjectProps {
   title: string;
   description: string;
   href: string;
-  src: string;
+  imgSrc: string;
 }
-function ProjectCard({ title, description, href, src }: ProjectProps) {
+function ProjectCard({ title, description, href, imgSrc }: ProjectProps) {
   return (
     <article className="mx-auto flex w-80 flex-col justify-between overflow-hidden rounded-lg border border-gray-200 pb-5 text-center transition-transform duration-300 lg:hover:scale-105">
       <header className="w-full">
         <img
-          src={src}
+          src={imgSrc}
           className="mb-5 h-44 w-full object-cover object-top"
           alt={title + ' project'}
         />

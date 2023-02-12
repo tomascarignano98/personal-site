@@ -4,9 +4,9 @@ import ExternalLink from '@/components/ExternalLink';
 import SEO from '@/components/SEO';
 import TechStackList from '@/components/TechStackList';
 
-import WebsiteImg from '/public/qspeed-500.png';
-import APIImg from '/public/qspeed-api.png';
-import WindowsAppImg from '/public/qspeed-windows-app.jpeg';
+import APIImg from '/public/qspeed/api.png';
+import WebsiteImg from '/public/qspeed/website.png';
+import WindowsAppImg from '/public/qspeed/windows-app.jpeg';
 
 export default function QspeedPage() {
   return (

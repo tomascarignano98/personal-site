@@ -4,7 +4,7 @@ import ExternalLink from '@/components/ExternalLink';
 import SEO from '@/components/SEO';
 import TechStackList from '@/components/TechStackList';
 
-import PassportBotImg from '/public/passport-bot-1000.jpg';
+import PassportBotImg from '/public/passport-bot/screenshot.jpg';
 
 export default function PassportBotPage() {
   return (
