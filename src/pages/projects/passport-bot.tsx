@@ -27,9 +27,9 @@ export default function PassportBotPage() {
           The project came to be as a solution to a niche problem in my life: we
           were in the middle of the pandemic, and getting an appointment for
           renewing my Spanish passport was virtually impossible; the website
-          would provide new slots every night at 00:00, and every time I tried
-          to fill a spot, I would get a popup saying it was already taken. This
-          happened to me around 4 times before I realized it was a speed
+          would provide new slots on specific days at 00:00, and every time I
+          tried to fill a spot, I would get a popup saying it was already taken.
+          This happened to me around 4 times before I realized it was a speed
           problem, so I decided to solve it with code. This was important for me
           because I was planning to move to Europe the following year.
         </p>
