@@ -4,6 +4,8 @@ import ExternalLink from '@/components/ExternalLink';
 import SEO from '@/components/SEO';
 import TechStackList from '@/components/TechStackList';
 
+import PassportBotImg from '/public/passport-bot-1000.jpg';
+
 export default function PassportBotPage() {
   return (
     <>
@@ -54,11 +56,10 @@ export default function PassportBotPage() {
           next opportunity, and voilà.
         </p>
         <Image
-          src="/passport-bot-1000.jpg"
-          width={1000}
-          height={750}
-          className="rounded-md"
+          src={PassportBotImg}
           alt="final outcome of the operation"
+          placeholder="blur"
+          className="rounded-md"
         />
       </section>
     </>
