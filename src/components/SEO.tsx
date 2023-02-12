@@ -5,8 +5,7 @@ interface ComponentProps {
 }
 
 export default function SEO({ title }: ComponentProps) {
-  const description =
-    'Tomas Carignano is a Software Developer based in Denmark.';
+  const description = 'Tomas Carignano Aznarez.';
   const url = 'https://www.tomascarignano.com/';
   const imgUrl = url + 'profile.jpg';
 
