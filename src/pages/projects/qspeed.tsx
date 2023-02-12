@@ -1,6 +1,12 @@
+import Image from 'next/image';
+
 import ExternalLink from '@/components/ExternalLink';
 import SEO from '@/components/SEO';
 import TechStackList from '@/components/TechStackList';
+
+import WebsiteImg from '/public/qspeed-500.png';
+import APIImg from '/public/qspeed-api.png';
+import WindowsAppImg from '/public/qspeed-windows-app.jpeg';
 
 export default function QspeedPage() {
   return (
@@ -56,9 +62,10 @@ export default function QspeedPage() {
             href="/qspeed-windows-app.jpeg"
             className="flex-grow overflow-hidden rounded-md shadow-lg transition hover:scale-105"
           >
-            <img
-              src="/qspeed-windows-app.jpeg"
+            <Image
+              src={WindowsAppImg}
               alt="qspeed"
+              placeholder="blur"
               className="max-h-80 w-full object-cover object-top"
             />
           </ExternalLink>
@@ -90,9 +97,10 @@ export default function QspeedPage() {
             href="/qspeed-api.png"
             className="flex-grow overflow-hidden rounded-md shadow-lg transition hover:scale-105"
           >
-            <img
-              src="/qspeed-api.png"
+            <Image
+              src={APIImg}
               alt="qspeed"
+              placeholder="blur"
               className="max-h-80 w-full object-cover object-top"
             />
           </ExternalLink>
@@ -102,9 +110,10 @@ export default function QspeedPage() {
             href="/qspeed-500.png"
             className="flex-grow overflow-hidden rounded-md shadow-lg transition hover:scale-105"
           >
-            <img
-              src="/qspeed-500.png"
+            <Image
+              src={WebsiteImg}
               alt="qspeed"
+              placeholder="blur"
               className="max-h-80 w-full object-cover object-top"
             />
           </ExternalLink>
@@ -146,18 +155,6 @@ export default function QspeedPage() {
           sure data is coming in the shape I expect it to, whether I'm working
           on the backend or the frontend.
         </p>
-        {/* <p>
-          Thanks to this project, I've gained a better and deeper understanding
-          of firebase cloud functions, I learned how to build a full-blown rest
-          api with express, I learned SSG with fallback: blocking, I learned how
-          complex it is to protect an api, went with just rate limiting. idk how
-          it has affected my work since then. One way I can think it affected my
-          work since then is thinking about schema validation the frontend as
-          well: there are crucial moments where if, for some reason, the data
-          doesn't come in the way I expect it, nobody will notice until it's too
-          late. So it made me appreciate having extra layers of security like
-          schema validation.
-        </p> */}
       </section>
     </>
   );
