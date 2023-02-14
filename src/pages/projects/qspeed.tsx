@@ -32,7 +32,7 @@ export default function QspeedPage() {
           business around timing MTB races and owned the necessary{' '}
           <TimingDeviceLink text="equipment" />, but he wished to have a program
           on top of it so he could perform tasks such as registering
-          competitors, creating different type of races, computing the ranking,
+          competitors, creating different type of races, compute the ranking,
           etc.
         </p>
         <p>
@@ -52,19 +52,19 @@ export default function QspeedPage() {
         </p>
       </section>
 
-      <section aria-labelledby="core-elements" className="mt-14 [&>p]:mt-3">
+      <section aria-labelledby="core-elements" className="mt-14">
         <h2 id="core-elements" className="mb-8 text-2xl">
           Core Elements
         </h2>
 
         <article className="mb-20 grid justify-center gap-8 sm:grid-cols-2">
           <ExternalLink
-            href="/qspeed-windows-app.jpeg"
+            href="/qspeed/windows-app.jpeg"
             className="flex-grow overflow-hidden rounded-md shadow-lg transition hover:scale-105"
           >
             <Image
               src={WindowsAppImg}
-              alt="qspeed"
+              alt="A screenshot of the windows app."
               placeholder="blur"
               className="max-h-80 w-full object-cover object-top"
             />
@@ -77,10 +77,11 @@ export default function QspeedPage() {
               <TimingDeviceLink text="a timing device" /> via{' '}
               <TCPIPDefinition />. This device reads the signal of a chip as it
               crosses an antenna, and it transmits the signal to the app. This
-              signal is then used by the app to calculate the ranking.
+              signal is then used by the app to compute the ranking.
             </p>
           </div>
         </article>
+
         <article className="mb-20 grid justify-center gap-8 sm:grid-cols-2">
           <div className="text-center">
             <h3>REST API</h3>
@@ -94,25 +95,26 @@ export default function QspeedPage() {
           </div>
 
           <ExternalLink
-            href="/qspeed-api.png"
+            href="/qspeed/api.png"
             className="flex-grow overflow-hidden rounded-md shadow-lg transition hover:scale-105"
           >
             <Image
               src={APIImg}
-              alt="qspeed"
+              alt="The API's source code."
               placeholder="blur"
               className="max-h-80 w-full object-cover object-top"
             />
           </ExternalLink>
         </article>
+
         <article className="grid justify-center gap-8 sm:grid-cols-2">
           <ExternalLink
-            href="/qspeed-500.png"
+            href="/qspeed/website.png"
             className="flex-grow overflow-hidden rounded-md shadow-lg transition hover:scale-105"
           >
             <Image
               src={WebsiteImg}
-              alt="qspeed"
+              alt="Race page screenshot."
               placeholder="blur"
               className="max-h-80 w-full object-cover object-top"
             />
