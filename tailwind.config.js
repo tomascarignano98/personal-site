@@ -11,6 +11,19 @@ module.exports = {
         primary: 'rgb(26, 115, 232)',
         primaryHover: 'rgb(25, 103, 210)',
         secondary: 'rgb(4,155,229)'
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': {
+            opacity: 0
+          },
+          '100%': {
+            opacity: 1
+          }
+        }
+      },
+      animation: {
+        fadeIn: 'fadeIn 300ms linear'
       }
     }
   },

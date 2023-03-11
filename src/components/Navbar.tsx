@@ -4,7 +4,7 @@ import NavLink from '@/components/NavLink';
 
 export default function Navbar() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-10 border-b bg-white/[0.96] backdrop-blur-sm print:hidden">
+    <header className="fixed top-0 left-0 right-0 z-10 animate-fadeIn border-b bg-white/[0.96] backdrop-blur-sm print:hidden">
       <div className="mx-auto max-w-screen-lg px-2">
         <nav className="flex items-center justify-between py-2 sm:text-base">
           <HomeLink />
