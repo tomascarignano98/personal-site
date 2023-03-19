@@ -162,9 +162,9 @@ export default function DoroteasPage() {
           favorite parts about the product.
         </p>
         <p>
-          The benefits I reaped trough this project are priceless! I became more
-          confident with the technologies I use, I learned how to manage tight
-          deadlines, I got over perfectionism, I became a lot better at
+          The benefits I reaped through this project are priceless! I became
+          more confident with the technologies I use, I learned how to manage
+          tight deadlines, I got over perfectionism, I became a lot better at
           communicating with clients and managing projects, and it made me
           considerably more comfortable at facing challenges I don't know the
           answer yet.
