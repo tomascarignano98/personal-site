@@ -38,7 +38,7 @@ interface ProjectProps {
 }
 function ProjectCard({ title, description, href, imgSrc }: ProjectProps) {
   return (
-    <article className="mx-auto flex w-80 flex-col justify-between overflow-hidden rounded-lg border border-gray-200 pb-5 text-center transition-transform duration-300 lg:hover:scale-105">
+    <article className="mx-auto flex w-80 flex-col justify-between overflow-hidden rounded-lg border border-gray-200 pb-5 text-center transition-transform duration-300 lg:hover:-translate-y-3 lg:hover:scale-105">
       <header className="w-full">
         <img
           src={imgSrc}
